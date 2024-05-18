@@ -1,0 +1,28 @@
+[tool.poetry]
+name = "conduit"
+version = "0.1.0"
+description = ""
+authors = ["Vishal Singhania <vishsinghania@outlook.com>"]
+license = "ISC"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+fastapi = "0.104.1"
+passlib = { extras = ["bcrypt"], version = "^1.7.4" }
+python-jose = { extras = ["cryptography"], version = "^3.3.0" }
+odmantic = { git = "https://github.com/art049/odmantic.git" }
+pydantic-settings = "^2.1.0"
+pydantic = "2.5.2"
+uvicorn = "^0.24.0.post1"
+
+[tool.poetry.dev-dependencies]
+pytest = "^7.1.2"
+isort = "^5.10.1"
+black = "^22.6.0"
+flake8 = "^5.0.4"
+mypy = "^0.971"
+pytest-asyncio = "^0.19.0"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
